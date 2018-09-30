@@ -1,0 +1,643 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>自学webApp</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="体现社交功能的毕业设计" />
+    <link rel="stylesheet" href="css/myWeb.min.css" type="text/css" />
+    <!--<link rel="stylesheet" href="css/myWeb.one.css" type="text/css" />-->
+    <link rel="stylesheet" href="css/swiper.css.css" type="text/css" />
+
+</head>
+
+<body  id="index">
+<div id="header">
+    <div class="page-container" id="nav"  style="background-color: #fff !important;">
+        <div id="logo" class="logo"><a href="/" target="_self" title="首页"><img title="学习App" src="/static/img/index/logo.png"></a></div>
+
+
+        <button type="button" class="navbar-toggle visible-xs-block js-show-menu" >
+            <i class="icon-menu"></i>
+        </button>
+        <ul class="nav-item">
+            <li class="set-btn visible-xs-block"><a href="/user/newlogin" target="_self">登录</a> / <a href="/user/newsignup" target="_self">注册</a></li>
+
+            <li>
+                <a href="/course/list"  target="_self">牛人讲师</a>
+            </li>
+            <li><a href="//class.imooc.com" class="" target="_self">学习路径</a></li>
+            <li>
+                <a href="//coding.imooc.com" target="_self">在线测题</a>
+            </li>
+            <li><a href="/wenda"  target="_self">留言板</a></li>
+        </ul>
+        <div id="login-area">
+            <ul class="header-unlogin clearfix">
+                <li class="header-signin">
+                    <a href="user/newlogin" id="js-signin-btn">登录</a> / <a href="//www.imooc.com/user/newsignup" id="js-signup-btn">注册</a>
+                </li>
+            </ul>
+        </div>
+        <div class='search-warp clearfix' style='min-width: 32px; height: 72px;'>
+            <div class="pa searchTags" >
+                <a href="//class.imooc.com/sc/20" target="_blank">高等数学</a>
+            </div>
+
+            <div class="search-area" data-search="top-banner">
+                <input class="search-input" data-suggest-trigger="suggest-trigger"      type="text" autocomplete="off">
+                <input type='hidden' class='btn_search' data-search-btn="search-btn" />
+                <ul class="search-area-result" data-suggest-result="suggest-result">
+                </ul>
+            </div>
+            <div class='showhide-search' data-show='no'><i class='icon-search'></i></div>
+        </div>
+    </div>
+</div>
+<!-- 新人有礼入口 -->
+<a class="newcomer index hide" href="//www.imooc.com/act/newcomer" target="_blank">
+    <i class="js-close imv2-close"></i>
+</a>
+<div class="bindHintBox js-bindHintBox hide">
+    <div class="pr">
+        为了账号安全，请及时绑定邮箱和手机<a href="/user/setbindsns" class="ml20 color-red" target="_blank">立即绑定</a>
+        <button  class="closeBindHint js-closeBindHint" type="button"></button>
+        <div class="arrow"> </div>
+    </div>
+</div>
+<div id="main">
+    <div class="bk"></div>
+    <div class="bgfff banner-box">
+        <div class="g-banner pr">
+            <div class="menuwrap">
+            </div>
+            <div class="menuContent">
+                <div class="item" data-id="a">
+                    <a href="javascript:void(0)">
+                        <span class="group">数学 / 三角函数 / 平面几何</span>
+                        <i class='imv2-arrow1_r'></i>
+                    </a>
+                </div>
+                <div class="item" data-id="b">
+                    <a href="javascript:void(0)">
+                        <span class="group">语文 / 文言文 / 古诗词</span>
+                        <i class='imv2-arrow1_r'></i>
+                    </a>
+                </div>
+                <div class="item" data-id="c">
+                    <a href="javascript:void(0)">
+                        <span class="group">英语 / 完形填空 / 听力</span>
+                        <i class='imv2-arrow1_r'></i>
+                    </a>
+                </div>
+                <div class="item" data-id="d">
+                    <a href="javascript:void(0)">
+                        <span class="group">物理 / 。。 / 。。</span>
+                        <i class='imv2-arrow1_r'></i>
+                    </a>
+                </div>
+                <div class="item" data-id="e">
+                    <a href="javascript:void(0)">
+                        <span class="group">化学 / 。。 / 。。</span>
+                        <i class='imv2-arrow1_r'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="g-banner-content">
+                <div class="g-banner-box">
+                    <a target="_blank" href="http://coding.imooc.com/class/259.html?mc_marking=bf8153b00fbb5fc30db143d389ef462a&mc_channel=banner" data-track="banner-1-1" class="click-help">
+                        <div class="banner-slide" data-url="//img.mukewang.com/5b57e8330001156e09360316.jpg">
+                            <img src="img/bikaqiu.jpg">
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://coding.imooc.com/class/251.html?mc_marking=683d4f9163f6a645da804759706042cc&mc_channel=banner" data-track="banner-1-2" class="click-help">
+                        <div class="banner-slide" data-url="//img.mukewang.com/5b4c0686000136fc18720632.jpg">
+                            <img src="img/bikaqiu.jpg">
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://coding.imooc.com/class/251.html?mc_marking=683d4f9163f6a645da804759706042cc&mc_channel=banner" data-track="banner-1-2" class="click-help">
+                        <div class="banner-slide" data-url="//img.mukewang.com/5b4c0686000136fc18720632.jpg">
+                            <img src="img/bikaqiu.jpg">
+                        </div>
+                    </a>
+                    <div class="banner-dots"><span class=""></span><span class=""></span><span class="active"></span><span class=""></span><span class=""></span><span class=""></span></div>
+                    <a href="javascript:;" class="banner-anchor prev icon-left2"></a>
+                    <a href="javascript:;" class="banner-anchor next icon-right2"></a>
+                    <div class="cb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bgfff">
+        <div class='container-types clearfix'>
+            <h3 class='types-title'>
+                <span class="tit-icon icon-shizhan-l tit-icon-l"></span><em>视</em>／<em>频</em>／<em>学</em>／<em>习</em><span class="tit-icon icon-shizhan-r tit-icon-r"></span>
+            </h3>
+            <div class='clearfix types-content'>
+            <div class='index-card-container course-card-container container'>
+                <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                    <div class='course-card-top hashadow'>
+                        <img class="course-banner" src="img/bikaqiu.jpg">
+                        <div class="course-label">
+                            <label>数学</label>
+                        </div>
+                    </div>
+                    <div class='course-card-content'>
+                        <h3 class='course-card-name'>排列与组合</h3>
+                        <div class='clearfix course-card-bottom'>
+                            <div class='course-card-info'>
+                                <span>讲师:比卡丘</span>
+                            </div>
+                            <div class='course-card-price'>10小时</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class='index-card-container course-card-container container'>
+                <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                    <div class='course-card-top hashadow'>
+                        <img class="course-banner" src="img/bikaqiu.jpg">
+                        <div class="course-label">
+                            <label>语文</label>
+                        </div>
+                    </div>
+                    <div class='course-card-content'>
+                        <h3 class='course-card-name'>背影(朱自清)</h3>
+                        <div class='clearfix course-card-bottom'>
+                            <div class='course-card-info'>
+                                <span>讲师:比卡丘</span>
+                            </div>
+                            <div class='course-card-price'>10小时</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class='index-card-container course-card-container container'>
+                <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                    <div class='course-card-top hashadow'>
+                        <img class="course-banner" src="img/bikaqiu.jpg">
+                        <div class="course-label">
+                            <label>体育</label>
+                        </div>
+                    </div>
+                    <div class='course-card-content'>
+                        <h3 class='course-card-name'>足球</h3>
+                        <div class='clearfix course-card-bottom'>
+                            <div class='course-card-info'>
+                                <span>讲师:比卡丘</span>
+                            </div>
+                            <div class='course-card-price'>10小时</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class='index-card-container course-card-container container'>
+                <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                    <div class='course-card-top hashadow'>
+                        <img class="course-banner" src="img/bikaqiu.jpg">
+                        <div class="course-label">
+                            <label>音乐</label>
+                        </div>
+                    </div>
+                    <div class='course-card-content'>
+                        <h3 class='course-card-name'>钢琴</h3>
+                        <div class='clearfix course-card-bottom'>
+                            <div class='course-card-info'>
+                                <span>讲师:比卡丘</span>
+                            </div>
+                            <div class='course-card-price'>10小时</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class='index-card-container course-card-container container'>
+                <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                    <div class='course-card-top hashadow'>
+                        <img class="course-banner" src="img/bikaqiu.jpg">
+                        <div class="course-label">
+                            <label>音乐</label>
+                        </div>
+                    </div>
+                    <div class='course-card-content'>
+                        <h3 class='course-card-name'>钢琴</h3>
+                        <div class='clearfix course-card-bottom'>
+                            <div class='course-card-info'>
+                                <span>讲师:比卡丘</span>
+                            </div>
+                            <div class='course-card-price'>10小时</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg000">
+        <div class='container-types clearfix'>
+            <h3 class='types-title'>
+                <span class="tit-icon icon-new-l tit-icon-l"></span><em>文</em>／<em>档</em>／<em>资</em>／<em>料</em><span class="tit-icon icon-new-r tit-icon-r"></span>
+            </h3>
+            <div class='clearfix types-content'>
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bgfff">
+        <div class='container-types clearfix'>
+            <h3 class='types-title'>
+                <span class="tit-icon icon-job-l tit-icon-l"></span><em>在</em>／<em>线</em>／<em>测</em>／<em>题</em><span class="tit-icon icon-job-r tit-icon-r"></span>
+            </h3>
+            <div class='clearfix types-content'>
+                <div class="adsense-box l" style="background: url(//img.mukewang.com/5bac768400011ccc05670108.jpg) no-repeat center center;background-size: 100%;">
+                    <a href="" data-track="xsrm-1-1"  target="_blank">
+                        <h3 class="ellipsis">高深莫测的题目！</h3>
+                        <p class="ellipsis">绝望</p>
+                    </a>
+                </div>
+
+            <div class="adsense-box l" style="background: url(//img.mukewang.com/5bac76c00001441b05670108.jpg) no-repeat center center;background-size: 100%;">
+                <a href="" data-track="xsrm-1-2"  target="_blank">
+                    <h3 class="ellipsis">菜鸟题目</h3>
+                    <p class="ellipsis">装逼</p>
+                </a>
+            </div>
+
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg000">
+        <div class='container-types clearfix'>
+            <h3 class='types-title'>
+                <span class="tit-icon icon-skill-l tit-icon-l"></span><em>学</em>／<em>习</em>／<em>聊</em>／<em>天</em>／<em>室</em><span class="tit-icon icon-skill-r tit-icon-r"></span>
+            </h3>
+            <div class='clearfix types-content'>
+                <div class="adsense-box l" style="background: url(//img.mukewang.com/5bac770c0001991905670108.jpg) no-repeat center center;background-size: 100%;">
+                    <a href="//www.imooc.com/topic/springboot?mc_marking=bd4bfd636a6f7a1c2863bf9c48e62fe4&amp;mc_channel=syzt3" data-track="jnts-1-1"  target="_blank">
+                        <h3 class="ellipsis">最热聊天室</h3>
+                        <p class="ellipsis">漂亮小姐姐碗里来</p>
+                    </a>
+                </div>
+
+            <div class="adsense-box l" style="background: url(//img.mukewang.com/5b86024c0001e0a805670108.jpg) no-repeat center center;background-size: 100%;">
+                <a href="//www.imooc.com/topic/aishizhan?mc_marking=a940ef2a9def37e189ff25ecc7622bf4&amp;mc_channel=syzt4" data-track="jnts-1-2"  target="_blank">
+                    <h3 class="ellipsis">精英联天</h3>
+                    <p class="ellipsis">大神的时代</p>
+                </a>
+            </div>
+
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class='index-card-container course-card-container container'>
+                    <a target="_blank" class='course-card' href="//coding.imooc.com/class/136.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&mc_channel=syb6" data-track="sztj-1-1">
+                        <div class='course-card-top hashadow'>
+                            <img class="course-banner" src="img/bikaqiu.jpg">
+                            <div class="course-label">
+                                <label>数学</label>
+                            </div>
+                        </div>
+                        <div class='course-card-content'>
+                            <h3 class='course-card-name'>排列与组合</h3>
+                            <div class='clearfix course-card-bottom'>
+                                <div class='course-card-info'>
+                                    <span>讲师:比卡丘</span>
+                                </div>
+                                <div class='course-card-price'>10小时</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer idx-minwidth">
+    <div class="container">
+        <div class="footer-wrap idx-width">
+            <div class="footer-sns clearfix">
+                <div class="l">
+                    <a href="javascript:void(0);" class="footer-sns-weixin" target="_blank" title="微信">
+                        <i class="footer-sns-weixin-expand"></i>
+                    </a>
+                    <p>官方公众号</p>
+                </div>
+                <div class="l">
+                    <a href="http://weibo.com/u/3306361973" class="footer-sns-weibo hide-text" target="_blank" title="新浪微博">新浪微博</a>
+                    <p>官方微博</p>      	</div>      </div>    </div>    <div class="footer-link">
+                    <a href="/index/companytrain" target="_blank" title="企业合作">企业合作</a>
+                    <a href="/about/job" target="_blank" title="人才招聘">人才招聘</a>
+                    <a href="/about/contact" target="_blank" title="联系我们">联系我们</a>
+                    <a href="/about/recruit" target="_blank" title="讲师招募">讲师招募</a>
+                    <a href="/help" target="_blank" title="帮助中心">帮助中心</a>
+                    <a href="/user/feedback" target="_blank" title="意见反馈">意见反馈</a>
+                    <a href="/about/friendly" target="_blank" title="友情链接">友情链接</a>
+                </div>
+                <div class="footer-copyright"></div>
+    </div></div>
+<div id="J_GotoTop" class="elevator">
+    <a href="/user/feedback" class="elevator-msg" target="_blank"><i class="icon-feedback"></i><span class="">意见反馈</span></a>
+    <a href="/help" class="elevator-faq" target="_blank"><i class="icon-ques"></i><span class="">帮助中心</span></a>
+    <a href="//www.imooc.com/mobile/app" target="_blank" class="elevator-app" ><i class="icon-appdownload"></i><span class="">APP下载</span><div class="elevator-app-box"></div></a>
+    <a href="javascript:void(0)" class="elevator-weixin no-goto" id="js-elevator-weixin" ><i class="icon-wxgzh"></i><span class="">官方微信</span><div class="elevator-weixin-box"></div></a>
+    <a href="javascript:void(0)" class="elevator-top no-goto" style="display:none" id="backTop"><i class="icon-up2"></i><span class="">返回顶部</span></a>
+</div>
+<!--script-->
+<div style="display: none">
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?f0cfcccd7b1393990c78efdeebff3968";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        (function (d) {
+            window.bd_cpro_rtid="rHT4P1c";
+            var s = d.createElement("script");s.type = "text/javascript";s.async = true;s.src = location.protocol + "//cpro.baidu.com/cpro/ui/rt.js";
+            var s0 = d.getElementsByTagName("script")[0];s0.parentNode.insertBefore(s, s0);
+        })(document);
+    </script>
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+</div>
+</body>
+</html>
